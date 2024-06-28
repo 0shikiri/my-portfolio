@@ -1,0 +1,69 @@
+/* Reset default margins and paddings */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Choose your preferred font */
+}
+
+/* Center align the form */
+.signupForm {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form headings */
+.signupForm h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style form labels */
+.signupForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style form inputs and textareas */
+.signupForm input[type="text"],
+.signupForm input[type="email"],
+.signupForm input[type="password"],
+.signupForm input[type="number"],
+.signupForm input[type="file"],
+.signupForm input[type="date"],
+.signupForm input[type="time"],
+.signupForm input[type="datetime-local"],
+.signupForm input[type="range"],
+.signupForm input[type="tel"],
+.signupForm input[type="url"],
+.signupForm textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Style submit button */
+.signupForm button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.signupForm button[type="submit"]:hover {
+    background-color: #45a049;
+}
