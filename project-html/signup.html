@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signupForm</title>
+</head>
+<body>
+    <div class="signupForm">
+        <form action="submit_form" method="post"></form>
+        <h2>sign up here</h2>
+
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="your username" id="username" class="username"> <br> <br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="email" id="email" class="email" required> <br> <br>
+
+        <label for="password">password</label>
+        <input type="password" name="password" placeholder="password" id="password" class="password" min="8" max="15" required> <br> <br>
+
+        <label for="height">Height(m)</label>
+        <input type="number" name="number" placeholder="number here" id="number" class="numbwer"> <br> <br>
+
+        <label for="age">Age</label>
+        <input type="number" name="age" min="15" max="45" step="1" placeholder="select"> <br> <br>
+
+        <label for="csrff_token"></label>
+        <input type="hidden" id="csrf" class="csrf" value="token">
+
+        <label for="value">Value</label>
+        <input type="number" name="age" value="18" placeholder="your age" min="18" max="50"> <br> <br>
+
+        <label for="file">File</label>
+        <input type="file" name="secret document" placeholder="document"><br> <br>
+
+        <label for="date">Date</label>
+        <input type="date" name="birthday"> <br><br>
+
+        <label for="time">Time</label>
+        <input type="time" name="time-to-pickup" /> <br> <br>
+
+        <label for="date-time">Date-time</label>
+        <input type="datetime-local" name="date-and-time" /> <br> <br>
+
+        <label for="range">Range</label>
+        <input type="range" name="age" min="0" max="100" value="30"> <br> <br>
+
+        <label for="telephone">Tel</label>
+        <input type="tell" name="telephone-number"><br> <br>
+
+        <label for="url">URL</label>
+        <input type="url" name="website"> <br> <br>
+
+        <label for="text-area">Text-area</label>
+        <textarea rows="20" cols="10"></textarea><br> <br>
+
+
+
+        <button type="submit">signup</button>
+
+    </div>
+    
+</body>
+</html>
