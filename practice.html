@@ -4,13 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="practice.css">
 </head>
 <body>
-    <div class="first_practice">
-        <h1>PC gaming news, reviews, and guides</h1>
-        <p>about us | news | reviews | article | #future</p>
-        <button class="button">LEARN MORE</button> 
-    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify HTML Table</title>
+    <script>
+        function addRow() {
+            var table = document.getElementById("myTable");
+            var row = table.insertRow();
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            cell1.innerHTML = "New row cell 1";
+            cell2.innerHTML = "New row cell 2";
+        }
+
+        function deleteRow() {
+            var table = document.getElementById("myTable");
+            table.deleteRow(-1); // Deletes the last row
+        }
+    </script>
+</head>
+<body>
+    <table id="myTable" border="1">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+        <tr>
+            <td>Row 1 cell 1</td>
+            <td>Row 1 cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2 cell 1</td>
+            <td>Row 2 cell 2</td>
+        </tr>
+    </table>
+
+    <br>
+    <button onclick="addRow()">Add Row</button>
+    <button onclick="deleteRow()">Delete Last Row</button>
+</body>
+</html>
+
 </body>
 </html>
