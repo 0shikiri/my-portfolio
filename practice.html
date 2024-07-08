@@ -3,53 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile card</title>
     <link rel="stylesheet" href="practice.css">
 </head>
 <body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modify HTML Table</title>
-    <script>
-        function addRow() {
-            var table = document.getElementById("myTable");
-            var row = table.insertRow();
-            var cell1 = row.insertCell(0);
-            var cell2 = row.insertCell(1);
-            cell1.innerHTML = "New row cell 1";
-            cell2.innerHTML = "New row cell 2";
-        }
+    <!-- <p>My dog name is:</p>
+    <span class="dog-name">Roger</span> -->
 
-        function deleteRow() {
-            var table = document.getElementById("myTable");
-            table.deleteRow(-1); // Deletes the last row
-        }
-    </script>
-</head>
-<body>
-    <table id="myTable" border="1">
-        <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-        </tr>
-        <tr>
-            <td>Row 1 cell 1</td>
-            <td>Row 1 cell 2</td>
-        </tr>
-        <tr>
-            <td>Row 2 cell 1</td>
-            <td>Row 2 cell 2</td>
-        </tr>
-    </table>
+    <!-- <span>Hello!</span>
+    <p>
+        my dog name is:
+        <span class="dog-name">Roger</span>
+    </p> -->
 
-    <br>
-    <button onclick="addRow()">Add Row</button>
-    <button onclick="deleteRow()">Delete Last Row</button>
-</body>
-</html>
+    <!-- <p>
+        <span>This is yellow</span>
+        <em>
+            <span>This is not yellow</span>
+        </em>
+    </p> -->
+
+    <!-- <p>This is a paragraph</p>
+    <span>This is a yellow <span></span></span> -->
+
+
+    <div class="profile_card">
+        <img src="oshikiri.jpg" alt="profile image" class="profile_image">
+        <h1>Emmanuel Andrew</h1>
+        <p>Web Developer $ Software Engineer</p>
+        <p>Emmanuel Andrew is a highly skilled web developer and software engineer with a passion for creating dynamic and user-friendly web applications. With over 5 years of experience in the tech industry, Emmanuel excels in both front-end and back-end development, mastering technologies such as HTML, CSS, JavaScript, React, Node.js, and Python.
+            His expertise extends to software engineering principles, allowing him to design and implement robust, scalable, and efficient software solutions.</p>
+            <button class="contact_btn">Contact Me</button>
+    </div>
+
+ 
+
 
 </body>
 </html>
